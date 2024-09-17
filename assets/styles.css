@@ -261,6 +261,7 @@ a {
         margin-right: 8%;
         gap: 20px;
     }
+
 }
 
 
@@ -347,13 +348,13 @@ a {
     transform: scale(0);
 }
 
-.heart:active {
+.heart:hover {
     background: linear-gradient(to bottom, #FF79DA, #9356DC);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.heart:active + .restaurants__cards--liked {
+.heart:hover + .restaurants__cards--liked {
         transform: scale(1);
         transition: 300ms ease-in-out;
 }

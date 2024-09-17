@@ -14,37 +14,176 @@
         <link rel="stylesheet" href="./restaurants.css">
 </head>
 <body>
-<section class="entrees">
+<!-- HEADER -->
+    <header class="header">
+        <a href="../index.html"><i class="fa-solid fa-arrow-left fa-xl header__icon"></i></i></a>
+        <img class="header__logo" src="../assets/ImagesettextesOhmyfood/images/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood">
+    </header>
+<!-- HEADER -->
+
+<!-- BACKGROUD IMAGE-->
+ <img class="image__background" src="../assets/ImagesettextesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Vu d'une table avec un plat réalisé dans le restaurant La palette du goût">
+
+
+<!-- MENU -->
+ 
+<section class="menu">
+    <div class="menu__title--div">
+    <h2 class="menu__title titles">La palette du goût</h2>
+    <span class="heart-container">
+        <i class="fa-regular fa-heart heart restaurants__cards--icon heart__menu"></i>
+        <i class="fa-solid fa-heart restaurants__cards--liked heart__menu"></i>
+      </span>
+    </div>
+    <h3 class="menu__subtitle titles">ENTRÉES</h3>
+    <div class="green__line"></div>
     <div class="menu__cards">
-        <input type="checkbox" id="toggle">
-        <label for="toggle" class="rectangle">
+        <input type="checkbox" id="entree1">
+        <label for="entree1" class="rectangle menu__cards--text">
             <span class="green-square">
                 <span class="green-square-circle">
                     <i class="fa-solid fa-check green-square-icon"></i>
                 </span>
             </span>
-            <span class="menu__cards--title">Fricassée d'escargots</span>
-            <span class="menu__cards--subtitle">Au piment d'Espelette</span>
+            <span class="menu__cards--title menu__cards--text">Fricassée d'escargots</span>
+            <span class="menu__cards--subtitle menu__cards--text">Au piment d'Espelette</span>
             <span class="menu__cards--price">25€</span>
         </label>
     </div>
 
     <div class="menu__cards">
-        <input type="checkbox" id="toggle1">
-        <label for="toggle1" class="rectangle">
+        <input type="checkbox" id="entree2">
+        <label for="entree2" class="rectangle">
             <span class="green-square">
                 <span class="green-square-circle">
                     <i class="fa-solid fa-check green-square-icon"></i>
                 </span>
             </span>
-            <span class="menu__cards--title">Fricassée d'escargots</span>
-            <span class="menu__cards--subtitle">Au piment d'Espelette</span>
-            <span class="menu__cards--price">25€</span>
+            <div class="menu__cards--text">
+                <span class="menu__cards--title menu__cards--text">Foie gras de canard mi-cuit</span>
+                <span class="menu__cards--subtitle menu__cards--text">et ses copeaux de truffe noire</span>
+            </div>
+        
+            <span class="menu__cards--price">35€</span>
         </label>
-    </div>
+    </div> 
 
+    <div class="menu__cards">
+        <input type="checkbox" id="entree3">
+        <label for="entree3" class="rectangle">
+            <span class="green-square">
+                <span class="green-square-circle">
+                    <i class="fa-solid fa-check green-square-icon"></i>
+                </span>
+            </span>
+            <span class="menu__cards--title menu__cards--text">Oeuf au plat</span>
+            <span class="menu__cards--subtitle menu__cards--text">Assaisonné à la truffe sur lit de caviar</span>
+            <span class="menu__cards--price">20€</span>
+        </label>
+    </div> 
+
+    <h3 class="menu__subtitle titles">PLATS</h3>
+    <div class="green__line"></div>
+
+    <div class="menu__cards">
+        <input type="checkbox" id="plat1">
+        <label for="plat1" class="rectangle">
+            <span class="green-square">
+                <span class="green-square-circle">
+                    <i class="fa-solid fa-check green-square-icon"></i>
+                </span>
+            </span>
+            <span class="menu__cards--title menu__cards--text">Filet de boeuf aux herbes</span>
+            <span class="menu__cards--subtitle menu__cards--text">Accompagné de sa ribambelle de légumes</span>
+            <span class="menu__cards--price">40€</span>
+        </label>
+    </div> 
     
-</section>   
+    <div class="menu__cards">
+        <input type="checkbox" id="plat2">
+        <label for="plat2" class="rectangle">
+            <span class="green-square">
+                <span class="green-square-circle">
+                    <i class="fa-solid fa-check green-square-icon"></i>
+                </span>
+            </span>
+            <span class="menu__cards--title menu__cards--text">Parmentier de queue de boeuf</span>
+            <span class="menu__cards--subtitle menu__cards--text">À la truffe noire sur sa purée de panais</span>
+            <span class="menu__cards--price">35€</span>
+        </label>
+    </div> 
+
+    <div class="menu__cards">
+        <input type="checkbox" id="plat3">
+        <label for="plat3" class="rectangle">
+            <span class="green-square">
+                <span class="green-square-circle">
+                    <i class="fa-solid fa-check green-square-icon"></i>
+                </span>
+            </span>
+            <span class="menu__cards--title menu__cards--text">Filet de turbot</span>
+            <span class="menu__cards--subtitle menu__cards--text">Aux agrumes</span>
+            <span class="menu__cards--price">44€</span>
+        </label>
+    </div> 
+
+    <h3 class="menu__subtitle titles">DESSERTS</h3>
+    <div class="green__line"></div>
+
+    <div class="menu__cards">
+        <input type="checkbox" id="dessert1">
+        <label for="dessert1" class="rectangle">
+            <span class="green-square">
+                <span class="green-square-circle">
+                    <i class="fa-solid fa-check green-square-icon"></i>
+                </span>
+            </span>
+            <span class="menu__cards--title menu__cards--text">Paris-Brest</span>
+            <span class="menu__cards--subtitle menu__cards--text">revisité</span>
+            <span class="menu__cards--price">18€</span>
+        </label>
+    </div> 
+
+    <div class="menu__cards">
+        <input type="checkbox" id="dessert2">
+        <label for="dessert2" class="rectangle">
+            <span class="green-square">
+                <span class="green-square-circle">
+                    <i class="fa-solid fa-check green-square-icon"></i>
+                </span>
+            </span>
+            <span class="menu__cards--title menu__cards--text">Macaron au chocolat d'exception</span>
+            <span class="menu__cards--subtitle menu__cards--text">et glace à la vanille de Madagascar</span>
+            <span class="menu__cards--price">22€</span>
+        </label>
+    </div> 
+
+    <div class="menu__cards">
+        <input type="checkbox" id="dessert3">
+        <label for="dessert3" class="rectangle">
+            <span class="green-square">
+                <span class="green-square-circle">
+                    <i class="fa-solid fa-check green-square-icon"></i>
+                </span>
+            </span>
+            <span class="menu__cards--title menu__cards--text">Mousse au chocolat</span>
+            <span class="menu__cards--subtitle menu__cards--text">Au piment d'Espelette et à la truffe noire</span>
+            <span class="menu__cards--price">23€</span>
+        </label>
+    </div> 
+
+    <div class="menu__button"><a href="#" class="order__button">Commander</a></div>
+</section>  
+
+<footer class="footer">
+    <h1 class="footer__title">ohmyfood</h1>
+    <ul class="footer__list">
+        <li class="footer__list--li"><a class="footer__list--text" href="#"><i class="fa-solid fa-utensils footer__list--icon"></i> Proposer un restaurant</a></li>
+        <li class="footer__list--li"><a class="footer__list--text" href="#"><i class="fa-solid fa-handshake-angle footer__list--icon"></i> Devenir partenaire</a></li>
+        <li class="footer__list--li"><a class="footer__list--text" href="#">Mentions légales</a></li>
+        <li class="footer__list--li"><a class="footer__list--text" href="#">Contact</a></li>
+    </ul>
+</footer>    
 </body>
 </html>
 
