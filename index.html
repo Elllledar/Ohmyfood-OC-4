@@ -32,48 +32,56 @@
     <!-- EXPLORE -->
         <section class="explore">.
             <div class="explore__content">
-                <h1 class="explore__title">Réserver le menu qui vous convient</h1>
+                <h2 class="explore__title">Réserver le menu qui vous convient</h2>
                 <p class="explore__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-                <a href="#restaurants" class="explore__button">Explorer nos restaurants</a>
+                <a href="#restaurants" class="explore__button explore__button--fade">Explorer nos restaurants</a>
             </div>    
         </section>
     <!-- EXPLORE -->
 
     <!-- FONCTIONNEMENT -->
         <section class="fonctionnement">
-            <h1>Fonctionnement</h1>
+            <h2>Fonctionnement</h2>
+            <div class="fonctionnement__grid">
             <article class="fonctionnement__cards1">
-                <span class="fonctionnement__cards">
-                    <p class="fonctionnement__number">1</p>
+                <div class="fonctionnement__cards">
+                    <span class="fonctionnement__number--circle">
+                        <span class="fonctionnement__number">1</span>
+                    </span>
                     <i class="fa-solid fa-mobile-screen-button fonctionnement__mobile__logo"></i>
-                    <p class="fonctionnement__cards--text">Choisissez un restaurant</p>
-                </span>
+                    <h3 class="fonctionnement__cards--text">Choisissez un restaurant</h3>
+                </div>
             </article>
 
             <article class="fonctionnement__cards2">
-                <span class="fonctionnement__cards">
-                    <p class="fonctionnement__number">2</p>
+                <div class="fonctionnement__cards">
+                    <span class="fonctionnement__number--circle">
+                        <span class="fonctionnement__number">2</span>
+                    </span>
                     <i class="fa-solid fa-list fonctionnement__mobile__logo"></i>
-                    <p class="fonctionnement__cards--text">Composez votre menu</p>
-                </span>
+                    <h3 class="fonctionnement__cards--text">Composez votre menu</h3>
+                </div>
             </article>
 
             <article class="fonctionnement__cards3">
-                <span class="fonctionnement__cards">
-                    <p class="fonctionnement__number">3</p>
+                <div class="fonctionnement__cards">
+                    <span class="fonctionnement__number--circle">
+                        <span class="fonctionnement__number">3</span>
+                    </span>
                     <i class="fa-solid fa-store fonctionnement__mobile__logo fonctionnement__mobile__logo--purple  "></i>
-                    <p class="fonctionnement__cards--text">Dégustez au restaurant</p>
-                </span>
+                    <h3 class="fonctionnement__cards--text">Dégustez au restaurant</h3>
+                </div>
             </article>
+            </div>
         </section>
         <!-- FONCTIONNEMENT -->
 
         <!-- RESTAURANTS -->
 
         <section id="restaurants">
-            <h1 class="restaurants__title">Restaurants</h1>
-
-            <a href="#">
+            <h2 class="restaurants__title">Restaurants</h2>
+            <div class="restaurants__grid">
+            <a href="./restaurants/LaPaletteDuGout.html">
                 <article class="restaurants__cards1">
                     <div class="restaurants__cards">
                         <img class="retaurants__cards--image" src="./assets/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Vu d'une table avec un plat réalisé dans le restaurant La palette du goût">
@@ -82,10 +90,11 @@
                                 <h2 class="restaurants__cards--title">La palette du goût</h2>
                                 <p class="restautants__cards--subtitle">Ménilmontant</p>
                             </div>
-                            <i class="fa-regular fa-heart retaurants__cards--icon "></i>
+                            <i class="fa-regular fa-heart restaurants__cards--icon "></i>
                         </div>
+                            <span class="nouveau">Nouveau</span>
                     </div>
-                    <span class="nouveau nouveau1">Nouveau</span>
+                    
                 </article>
              </a>
 
@@ -98,13 +107,13 @@
                                 <h2 class="restaurants__cards--title">La note enchantée</h2>
                                 <p class="restautants__cards--subtitle">Charonne</p>
                             </div>
-                            <i class="fa-regular fa-heart retaurants__cards--icon "></i>
+                            <i class="fa-regular fa-heart restaurants__cards--icon "></i>
                         </div>
+                            <span class="nouveau">Nouveau</span>
                     </div>
-                    <span class="nouveau nouveau2">Nouveau</span>
                 </article>
             </a>
-
+    
             <a href="#">
                 <article class="restaurants__cards3">
                     <div class="restaurants__cards">
@@ -114,7 +123,7 @@
                                 <h2 class="restaurants__cards--title">À la française</h2>
                                 <p class="restautants__cards--subtitle">Cité Rouge</p>
                             </div>
-                           <i class="fa-regular fa-heart retaurants__cards--icon "></i>
+                           <i class="fa-regular fa-heart restaurants__cards--icon "></i>
                         </div>
                     </div>
                 </article>
@@ -129,11 +138,15 @@
                                 <h2 class="restaurants__cards--title">Le délice des sens</h2>
                                 <p class="restautants__cards--subtitle">Folie-Méricourt</p>
                             </div>
-                            <i class="fa-regular fa-heart retaurants__cards--icon "></i>
+                            <span class="heart-container">
+                                <i class="fa-regular fa-heart heart restaurants__cards--icon"></i>
+                                <i class="fa-solid fa-heart restaurants__cards--liked"></i>
+                              </span>
                         </div>
                     </div>
                 </article>
             </a>
+        </div>
         </section>
         <!-- RESTAURANTS -->
 
