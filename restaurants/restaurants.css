@@ -56,6 +56,13 @@ a {
 .image__background {
     height: 275px;
     width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 1023px) {
+    .image__background {
+        height: 383px;
+    }
 }
 
 /**** Menu ****/
@@ -232,6 +239,26 @@ input[type="checkbox"]:not(:checked) + .rectangle .menu__cards--text{
     box-shadow: 6px 6px 10px var(--Box-Shadow);
 }
 
+
+@media (min-width: 1023px) {
+    .menu {
+        width: 80%;
+        margin: auto;
+        margin-top: -40px;
+    }
+
+    .menu__title--div {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .menu__content {
+        margin: auto;
+        width: 60%;
+    }
+
+}
 
 /**** FOOTER ****/
 
