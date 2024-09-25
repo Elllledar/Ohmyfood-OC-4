@@ -61,8 +61,17 @@ a {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(.75, .25, .83, .67); 
+    }
+    50% {
+        transform: rotate(180deg); 
+        animation-timing-function: cubic-bezier(.07, .68, .83, .67); 
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes hideElement {
