@@ -128,6 +128,7 @@ a {
     background-color: white;
     position: relative;
     overflow: hidden; 
+    cursor: pointer;
 }
 
 .green-square {

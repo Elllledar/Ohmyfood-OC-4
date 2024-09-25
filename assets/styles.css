@@ -113,6 +113,8 @@ a {
     box-shadow: 6px 6px 10px var(--Box-Shadow);
 }
 
+
+
 /**** FONCTIONNEMENT ****/
 
 .fonctionnement {
@@ -245,6 +247,35 @@ a {
     right: 20px;
 }
 
+.restaurants__cards--icon {
+    position: relative;
+    font-size: 22px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+.restaurants__cards--liked {
+    position: relative;
+    padding-right: 10px;
+    margin-left: -42px;
+    font-size: 22px;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0);
+}
+
+.heart:hover {
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heart:hover + .restaurants__cards--liked {
+        transform: scale(1);
+        transition: 300ms ease-in-out;
+}
+
 
 @media (min-width: 1023px ) {
 
@@ -328,33 +359,4 @@ a {
 }
 
 
-/***test***/
 
-.restaurants__cards--icon {
-    position: relative;
-    font-size: 22px;
-    padding-right: 20px;
-    z-index: 1;
-}
-
-.restaurants__cards--liked {
-    position: relative;
-    padding-right: 10px;
-    margin-left: -42px;
-    font-size: 22px;
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(0);
-}
-
-.heart:hover {
-    background: linear-gradient(to bottom, #FF79DA, #9356DC);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.heart:hover + .restaurants__cards--liked {
-        transform: scale(1);
-        transition: 300ms ease-in-out;
-}
