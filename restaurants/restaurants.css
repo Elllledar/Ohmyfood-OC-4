@@ -34,51 +34,6 @@ a {
     color: black;
 }
 
-/********** LOADER **************/
-
-.loader {
-    margin: auto;
-    border: 8px solid var(--Light-Purple);
-    border-top: 8px solid #FF79DA; 
-    border-radius: 50%;
-    width: 80px; 
-    height: 80px; 
-    animation: spin 1s linear infinite; 
-    position: relative;
-}
-
-.loadingScreen {
-    padding-top: -20px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.750);
-    position: absolute;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: hideElement 1s forwards 1s
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-        animation-timing-function: cubic-bezier(.75, .25, .83, .67); 
-    }
-    50% {
-        transform: rotate(180deg); 
-        animation-timing-function: cubic-bezier(.07, .68, .83, .67); 
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes hideElement {
-    to { display: none;}
-}
-
-
 /**** HEADER ****/
 
 .header {
@@ -290,11 +245,11 @@ input[type="checkbox"]:not(:checked) + .rectangle .menu__cards--text{
 @keyframes apparitionCards {
     0% {
         opacity: 0;
-        transform: translateY(20px); /* Déplacement vers le bas */
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* Position normale */
+        transform: translateY(0); 
     }
 }
 
