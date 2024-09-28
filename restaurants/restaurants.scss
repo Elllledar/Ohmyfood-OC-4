@@ -1,0 +1,45 @@
+$Light-Green: #99E2D0;
+$Deep-Green: #008766;
+$Light-Blue: #89C8FA;
+$Deep-Blue: #003A68;
+$Light-Purple: #9356DC;
+$Main-Background-Color: #f2f2f2;
+$Box-Shadow: lightgrey;
+
+:root {
+    --Light-Green : $Light-Green;
+    --Deep-Green : $Deep-Green;
+    --Light-Blue : $Light-Blue;
+    --Deep-Blue : $Deep-Blue;
+    --Light-Purple : $Light-Purple;
+    --Main-Background-Color : $Main-Background-Color;
+    --Box-Shadow : $Box-Shadow;
+}
+
+.fa-solid {
+    color: #353535;
+    font-weight: 900;
+}
+
+body {
+    max-width: 1440px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+

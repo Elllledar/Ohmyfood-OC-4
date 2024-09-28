@@ -1,3 +1,4 @@
+
 :root {
     --Light-Green : #99E2D0;
     --Deep-Green : #008766;
@@ -14,10 +15,11 @@
 }
 
 body {
-    margin: 0%;
+    max-width: 1440px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin: 0 auto;
 }
 
 h1 {
@@ -50,6 +52,12 @@ a {
     position: absolute;
     left: 15px;
 }
+
+.header__logo {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    margin-left: 20px;
+  }
 
 /**** BACKGROUND IMAGE ****/
 
@@ -162,37 +170,37 @@ a {
 }
 
 .menu__cards--title {
-    position: absolute;
-    z-index: 1;
-    left: 3vw;
-    top: 3vh;
-    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.menu__cards--position { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .menu__cards--subtitle {
-    position: absolute;
-    z-index: 1;
-    bottom: 3vh;
-    left: 3vw;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 100%;
+    font-size: 16px;
+}
+
+.menu__cards--price {
+    padding-right: 20px;
+    font-weight: bold;
 }
 
 .menu__cards--text  {
-    width: 100%;
+    width: 80%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     transition: width 0.3s ease;
-}
-
-
-
-.menu__cards--price {
-    position: absolute;
-    z-index: 2;
-    right: 3vw;
-    bottom: 3vh;
-    font-weight: bold;
-    transition: transform 0.4s ease 0.2s;
 }
 
 input[type="checkbox"] {
@@ -203,16 +211,12 @@ input[type="checkbox"]:checked + .rectangle .green-square {
     right: 0;
 }
 
-input[type="checkbox"]:checked + .rectangle .menu__cards--price{
-    transform: translateX(-70px);
-}
-
 input[type="checkbox"]:checked + .rectangle .menu__cards--text{
-    width: 60%;
+    width: 80%;
 }
 
 input[type="checkbox"]:not(:checked) + .rectangle .menu__cards--text{
-    width: 80%;
+    width: 100%;
     transition: width 0.5s ease 0.3s;
 }
 
@@ -384,6 +388,7 @@ input[type="checkbox"]:not(:checked) + .rectangle .menu__cards--text{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(0);
+    transition: 500ms;
 }
 
 .heart:hover {
