@@ -51,7 +51,6 @@ a {
   animation: hideElement 1s forwards 1s;
 }
 .loadingScreen .loader {
-  margin: auto;
   border: 8px solid #FF79DA;
   border-top: 8px solid #9356DC;
   border-radius: 50%;
