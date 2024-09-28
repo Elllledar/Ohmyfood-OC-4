@@ -51,6 +51,7 @@ a {
 /*** LOADER ***/
 
 .loadingScreen {
+    max-width: 1440px;
     padding-top: -20px;
     width: 100%;
     height: 100%;
@@ -63,6 +64,7 @@ a {
     animation: hideElement 1s forwards 1s;
   
     .loader {
+      margin: 0;
       border: 8px solid $Light-Pink;
       border-top: 8px solid $Light-Purple;
       border-radius: 50%;
