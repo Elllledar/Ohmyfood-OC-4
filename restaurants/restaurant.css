@@ -95,10 +95,12 @@ a {
   position: relative;
   font-size: 22px;
   padding-right: 20px;
+  padding-top: 20px;
   z-index: 1;
 }
 .menu .restaurants__cards--liked {
   position: relative;
+  padding-top: 20px;
   padding-right: 10px;
   margin-left: -42px;
   font-size: 22px;
@@ -181,11 +183,11 @@ a {
   color: #99E2D0;
 }
 .menu__cards .rectangle .menu__cards--text {
-  width: 80%;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: width 0.3s ease;
+  transition: width 0.5s ease 0.3s;
 }
 .menu__cards .rectangle .menu__cards--text .menu__cards--title {
   padding-top: 10px;
@@ -209,19 +211,11 @@ a {
   padding-right: 20px;
   font-weight: bold;
 }
-
-input[type=checkbox] {
-  display: none;
-}
-input[type=checkbox]:checked + .rectangle .green-square {
+.menu__cards:hover .rectangle .green-square {
   right: 0;
 }
-input[type=checkbox]:checked + .rectangle .menu__cards--text {
+.menu__cards:hover .rectangle .menu__cards--text {
   width: 80%;
-}
-input[type=checkbox]:not(:checked) + .rectangle .menu__cards--text {
-  width: 100%;
-  transition: width 0.5s ease 0.3s;
 }
 
 .menu__cards:nth-child(1) {
