@@ -1,4 +1,4 @@
-
+:root {
 $Light-Green: #99E2D0;
 $Deep-Green: #008766;
 $Light-Blue: #89C8FA;
@@ -7,18 +7,7 @@ $Light-Purple: #9356DC;
 $Main-Background-Color: #f2f2f2;
 $Box-Shadow: lightgrey;
 $Light-Pink: #FF79DA;
-
-
-:root {
-  --Light-Green: $Light-Green;
-  --Deep-Green: $Deep-Green;
-  --Light-Blue: $Light-Blue;
-  --Deep-Blue: $Deep-Blue;
-  --Light-Purple: $Light-Purple;
-  --Main-Background-Color: $Main-Background-Color;
-  --Box-Shadow: $Box-Shadow;
 }
-
 
 .fa-solid {
   color: #353535;
@@ -52,7 +41,6 @@ a {
 
 .loadingScreen {
     max-width: 1440px;
-    padding-top: -20px;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.75);
@@ -97,7 +85,7 @@ a {
 
   /*** HEADER ***/ 
 
-  .header {
+  .header__index {
     display: flex;
     flex-direction: column;
     align-items: center;
